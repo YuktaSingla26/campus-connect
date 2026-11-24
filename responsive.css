@@ -1,7 +1,4 @@
 
-/* =========================================
-   1. TABLET RESPONSIVENESS
-========================================= */
 
 @media screen and (max-width: 1024px) {
 
@@ -18,11 +15,6 @@
     }
 
 }
-
-
-/* =========================================
-   2. MOBILE RESPONSIVENESS
-========================================= */
 
 @media screen and (max-width: 768px) {
 
@@ -46,15 +38,9 @@
         font-size: 12px;
     }
 
-
-    /* Main Layout */
-
     .layout {
         flex-direction: column;
     }
-
-
-    /* Sidebar */
 
     .sidebar {
         width: 100%;
@@ -73,16 +59,9 @@
         padding: 10px;
         font-size: 13px;
     }
-
-
-    /* Main Content */
-
     .main-content {
         padding: 18px;
     }
-
-
-    /* Welcome Section */
 
     .welcome-section {
         padding: 22px;
@@ -91,9 +70,6 @@
     .welcome-section h1 {
         font-size: 24px;
     }
-
-
-    /* Statistics */
 
     .stats-container {
         grid-template-columns: repeat(2, 1fr);
@@ -109,29 +85,18 @@
     }
 
 
-    /* Event Cards */
-
     .event-grid {
         grid-template-columns: 1fr;
     }
-
-
-    /* Announcements */
 
     .announcement-list {
         grid-template-columns: 1fr;
     }
 
 
-    /* Quick Links */
-
     .quick-links {
         grid-template-columns: 1fr;
     }
-
-
-    /* Search and Filters */
-
     .filter-section {
         flex-direction: column;
         align-items: stretch;
@@ -144,10 +109,6 @@
 
 }
 
-
-/* =========================================
-   3. SMALL MOBILE SCREENS
-========================================= */
 
 @media screen and (max-width: 480px) {
 

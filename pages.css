@@ -1,8 +1,4 @@
 
-/* =========================================
-   1. PAGE HEADINGS
-========================================= */
-
 .page-header {
     margin-bottom: 30px;
 }
@@ -17,12 +13,6 @@
     color: #71817A;
     font-size: 15px;
 }
-
-
-/* =========================================
-   2. SEARCH AND FILTER SECTION
-========================================= */
-
 .filter-section {
     display: flex;
     align-items: center;
@@ -46,21 +36,11 @@
     border-color: #174D45;
 }
 
-
-/* =========================================
-   3. CONTENT GRID
-========================================= */
-
 .event-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 22px;
 }
-
-
-/* =========================================
-   4. EVENT, SOCIETY AND OPPORTUNITY CARDS
-========================================= */
 
 .event-card {
     background-color: #FFFDF8;
@@ -93,11 +73,6 @@
     line-height: 1.6;
 }
 
-
-/* =========================================
-   5. CATEGORY LABELS
-========================================= */
-
 .category-badge {
     background-color: #DCE8E1;
     color: #174D45;
@@ -111,10 +86,6 @@
     width: fit-content;
 }
 
-
-/* =========================================
-   6. CARD BUTTONS
-========================================= */
 
 .event-card button {
     background-color: #174D45;
@@ -137,11 +108,6 @@
     background-color: #E9825B;
 }
 
-
-/* =========================================
-   7. SECONDARY BUTTON
-========================================= */
-
 .secondary-btn {
     background-color: #DCE8E1 !important;
     color: #174D45 !important;
@@ -151,11 +117,6 @@
     background-color: #E9825B !important;
     color: white !important;
 }
-
-
-/* =========================================
-   8. EMPTY STATE
-========================================= */
 
 .empty-message {
     background-color: #FFFDF8;
@@ -169,11 +130,6 @@
     grid-column: 1 / -1;
 }
 
-
-/* =========================================
-   9. CARD INFORMATION
-========================================= */
-
 .card-info {
     display: flex;
     align-items: center;
@@ -184,11 +140,6 @@
     color: #71817A;
     font-size: 13px;
 }
-
-
-/* =========================================
-   10. CARD ACTIONS
-========================================= */
 
 .card-actions {
     display: flex;
