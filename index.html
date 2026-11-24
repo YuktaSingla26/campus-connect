@@ -1,0 +1,198 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CampusConnect | Dashboard</title>
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+
+        <div class="logo">
+            CampusConnect
+        </div>
+
+        <div class="nav-right">
+            <span>Student Portal</span>
+            <span class="notification">🔔</span>
+            <span class="profile">👤 Student</span>
+        </div>
+
+    </header>
+
+
+    <!-- MAIN LAYOUT -->
+    <div class="layout">
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+
+            <h3>MENU</h3>
+
+            <a href="index.html" class="active">
+                Dashboard
+            </a>
+
+            <a href="events.html">
+                Events
+            </a>
+
+            <a href="societies.html">
+                Societies
+            </a>
+
+            <a href="opportunities.html">
+                Opportunities
+            </a>
+
+        </aside>
+
+
+        <!-- MAIN CONTENT -->
+        <main class="main-content">
+
+            <!-- WELCOME SECTION -->
+            <section class="welcome">
+
+                <h1>Welcome Back, Student!</h1>
+
+                <p>
+                    Discover events, opportunities and
+                    everything happening on your campus.
+                </p>
+
+            </section>
+
+
+            <!-- STATISTICS -->
+            <section class="stats">
+
+                <div class="card">
+                    <h2 id="eventCount">0</h2>
+                    <p>Upcoming Events</p>
+                </div>
+
+                <div class="card">
+                    <h2 id="societyCount">0</h2>
+                    <p>College Societies</p>
+                </div>
+
+                <div class="card">
+                    <h2 id="registrationCount">0</h2>
+                    <p>My Registrations</p>
+                </div>
+
+                <div class="card">
+                    <h2 id="opportunityCount">0</h2>
+                    <p>Opportunities</p>
+                </div>
+
+            </section>
+
+
+            <!-- UPCOMING EVENTS -->
+            <section class="dashboard-section">
+
+                <div class="section-heading">
+                    <h2>Upcoming Events</h2>
+
+                    <a href="events.html">
+                        View All
+                    </a>
+                </div>
+
+                <div id="dashboardEvents" class="event-grid">
+
+                    <!-- Events will be added using JavaScript -->
+
+                </div>
+
+            </section>
+
+
+            <!-- ANNOUNCEMENTS -->
+            <section class="dashboard-section">
+
+                <h2>Latest Announcements</h2>
+
+                <div class="announcement-list">
+
+                    <div class="card">
+                        <h3>Technical Workshop</h3>
+                        <p>
+                            Registration for the upcoming
+                            technical workshop is open.
+                        </p>
+                    </div>
+
+                    <div class="card">
+                        <h3>Society Recruitment</h3>
+                        <p>
+                            College societies are inviting
+                            new members.
+                        </p>
+                    </div>
+
+                    <div class="card">
+                        <h3>Hackathon Registration</h3>
+                        <p>
+                            Students can now register for
+                            upcoming coding competitions.
+                        </p>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- QUICK LINKS -->
+            <section class="dashboard-section">
+
+                <h2>Explore Campus</h2>
+
+                <div class="quick-links">
+
+                    <a href="events.html" class="card">
+                        <h3>Explore Events</h3>
+                        <p>Discover college activities.</p>
+                    </a>
+
+                    <a href="societies.html" class="card">
+                        <h3>Explore Societies</h3>
+                        <p>Find your college community.</p>
+                    </a>
+
+                    <a href="opportunities.html" class="card">
+                        <h3>Find Opportunities</h3>
+                        <p>Explore internships and hackathons.</p>
+                    </a>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+
+    <!-- JAVASCRIPT FILES -->
+    <script src="js/data.js"></script>
+    <script src="js/storage.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/dashboard.js"></script>
+
+</body>
+</html>

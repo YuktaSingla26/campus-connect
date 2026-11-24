@@ -1,0 +1,143 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CampusConnect | Opportunities</title>
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/pages.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+
+        <div class="logo">
+            CampusConnect
+        </div>
+
+        <div class="nav-right">
+            <span>Student Portal</span>
+            <span>🔔</span>
+            <span>👤 Student</span>
+        </div>
+
+    </header>
+
+
+    <!-- MAIN LAYOUT -->
+    <div class="layout">
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+
+            <h3>MENU</h3>
+
+            <a href="index.html">
+                Dashboard
+            </a>
+
+            <a href="events.html">
+                Events
+            </a>
+
+            <a href="societies.html">
+                Societies
+            </a>
+
+            <a href="opportunities.html" class="active">
+                Opportunities
+            </a>
+
+        </aside>
+
+
+        <!-- MAIN CONTENT -->
+        <main class="main-content">
+
+            <!-- PAGE HEADING -->
+            <section class="page-heading">
+
+                <h1>Explore Opportunities</h1>
+
+                <p>
+                    Discover internships, hackathons,
+                    competitions and more.
+                </p>
+
+            </section>
+
+
+            <!-- SEARCH AND FILTER -->
+            <section class="filters">
+
+                <input
+                    type="text"
+                    id="opportunitySearch"
+                    placeholder="Search opportunities..."
+                >
+
+                <select id="opportunityCategory">
+
+                    <option value="All">
+                        All Opportunities
+                    </option>
+
+                    <option value="Internship">
+                        Internships
+                    </option>
+
+                    <option value="Hackathon">
+                        Hackathons
+                    </option>
+
+                    <option value="Workshop">
+                        Workshops
+                    </option>
+
+                    <option value="Scholarship">
+                        Scholarships
+                    </option>
+
+                </select>
+
+            </section>
+
+
+            <!-- OPPORTUNITY LIST -->
+            <section class="opportunities-section">
+
+                <h2>Available Opportunities</h2>
+
+                <div
+                    id="opportunitiesContainer"
+                    class="event-grid"
+                >
+
+                    <!-- JavaScript will display opportunities here -->
+
+                </div>
+
+            </section>
+
+
+        </main>
+
+    </div>
+
+
+    <!-- JAVASCRIPT FILES -->
+    <script src="js/data.js"></script>
+    <script src="js/storage.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/opportunities.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CampusConnect | Societies</title>
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/pages.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+
+        <div class="logo">
+            CampusConnect
+        </div>
+
+        <div class="nav-right">
+            <span>Student Portal</span>
+            <span>🔔</span>
+            <span>👤 Student</span>
+        </div>
+
+    </header>
+
+
+    <!-- MAIN LAYOUT -->
+    <div class="layout">
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+
+            <h3>MENU</h3>
+
+            <a href="index.html">
+                Dashboard
+            </a>
+
+            <a href="events.html">
+                Events
+            </a>
+
+            <a href="societies.html" class="active">
+                Societies
+            </a>
+
+            <a href="opportunities.html">
+                Opportunities
+            </a>
+
+        </aside>
+
+
+        <!-- MAIN CONTENT -->
+        <main class="main-content">
+
+            <!-- PAGE HEADING -->
+            <section class="page-heading">
+
+                <h1>Explore Societies</h1>
+
+                <p>
+                    Find your community, discover your interests
+                    and connect with fellow students.
+                </p>
+
+            </section>
+
+
+            <!-- SEARCH -->
+            <section class="filters">
+
+                <input
+                    type="text"
+                    id="societySearch"
+                    placeholder="Search societies..."
+                >
+
+            </section>
+
+
+            <!-- SOCIETY CARDS -->
+            <section class="societies-section">
+
+                <h2>College Societies</h2>
+
+                <div
+                    id="societiesContainer"
+                    class="event-grid"
+                >
+
+                    <!-- JavaScript will display societies here -->
+
+                </div>
+
+            </section>
+
+
+        </main>
+
+    </div>
+
+
+    <!-- JAVASCRIPT FILES -->
+    <script src="js/data.js"></script>
+    <script src="js/storage.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/societies.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,143 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CampusConnect | Events</title>
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/pages.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+
+        <div class="logo">
+            CampusConnect
+        </div>
+
+        <div class="nav-right">
+            <span>Student Portal</span>
+            <span>🔔</span>
+            <span>👤 Student</span>
+        </div>
+
+    </header>
+
+
+    <!-- MAIN LAYOUT -->
+    <div class="layout">
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+
+            <h3>MENU</h3>
+
+            <a href="index.html">
+                Dashboard
+            </a>
+
+            <a href="events.html" class="active">
+                Events
+            </a>
+
+            <a href="societies.html">
+                Societies
+            </a>
+
+            <a href="opportunities.html">
+                Opportunities
+            </a>
+
+        </aside>
+
+
+        <!-- MAIN CONTENT -->
+        <main class="main-content">
+
+            <!-- PAGE HEADING -->
+            <section class="page-heading">
+
+                <h1>Explore Events</h1>
+
+                <p>
+                    Discover exciting events and activities
+                    happening in your college.
+                </p>
+
+            </section>
+
+
+            <!-- SEARCH AND FILTER -->
+            <section class="filters">
+
+                <input
+                    type="text"
+                    id="eventSearch"
+                    placeholder="Search events..."
+                >
+
+                <select id="eventCategory">
+
+                    <option value="All">
+                        All Categories
+                    </option>
+
+                    <option value="Technical">
+                        Technical
+                    </option>
+
+                    <option value="Cultural">
+                        Cultural
+                    </option>
+
+                    <option value="Sports">
+                        Sports
+                    </option>
+
+                    <option value="Workshop">
+                        Workshop
+                    </option>
+
+                </select>
+
+            </section>
+
+
+            <!-- EVENT LIST -->
+            <section class="events-section">
+
+                <h2>All Events</h2>
+
+                <div
+                    id="eventsContainer"
+                    class="event-grid"
+                >
+
+                    <!-- JavaScript will display events here -->
+
+                </div>
+
+            </section>
+
+
+        </main>
+
+    </div>
+
+
+    <!-- JAVASCRIPT FILES -->
+    <script src="js/data.js"></script>
+    <script src="js/storage.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/events.js"></script>
+
+</body>
+</html>
