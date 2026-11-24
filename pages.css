@@ -1,0 +1,201 @@
+
+/* =========================================
+   1. PAGE HEADINGS
+========================================= */
+
+.page-header {
+    margin-bottom: 30px;
+}
+
+.page-header h1 {
+    color: #174D45;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.page-header p {
+    color: #71817A;
+    font-size: 15px;
+}
+
+
+/* =========================================
+   2. SEARCH AND FILTER SECTION
+========================================= */
+
+.filter-section {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.filter-section input {
+    flex: 1;
+    min-width: 200px;
+}
+
+.filter-section select {
+    min-width: 180px;
+    cursor: pointer;
+}
+
+.filter-section input:focus,
+.filter-section select:focus {
+    border-color: #174D45;
+}
+
+
+/* =========================================
+   3. CONTENT GRID
+========================================= */
+
+.event-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+
+/* =========================================
+   4. EVENT, SOCIETY AND OPPORTUNITY CARDS
+========================================= */
+
+.event-card {
+    background-color: #FFFDF8;
+    border: 1px solid #E5DED1;
+    border-radius: 15px;
+
+    padding: 23px;
+    box-shadow: 0 4px 15px rgba(23, 77, 69, 0.08);
+
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    transition: 0.3s;
+}
+
+.event-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(23, 77, 69, 0.13);
+}
+
+.event-card h3 {
+    color: #174D45;
+    font-size: 19px;
+}
+
+.event-card p {
+    color: #71817A;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+
+/* =========================================
+   5. CATEGORY LABELS
+========================================= */
+
+.category-badge {
+    background-color: #DCE8E1;
+    color: #174D45;
+
+    padding: 6px 11px;
+    border-radius: 20px;
+
+    font-size: 12px;
+    font-weight: bold;
+
+    width: fit-content;
+}
+
+
+/* =========================================
+   6. CARD BUTTONS
+========================================= */
+
+.event-card button {
+    background-color: #174D45;
+    color: #FFFDF8;
+
+    border: none;
+    border-radius: 8px;
+
+    padding: 10px 15px;
+    margin-top: 5px;
+
+    font-size: 13px;
+    font-weight: bold;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.event-card button:hover {
+    background-color: #E9825B;
+}
+
+
+/* =========================================
+   7. SECONDARY BUTTON
+========================================= */
+
+.secondary-btn {
+    background-color: #DCE8E1 !important;
+    color: #174D45 !important;
+}
+
+.secondary-btn:hover {
+    background-color: #E9825B !important;
+    color: white !important;
+}
+
+
+/* =========================================
+   8. EMPTY STATE
+========================================= */
+
+.empty-message {
+    background-color: #FFFDF8;
+    border: 1px dashed #71817A;
+    border-radius: 12px;
+
+    padding: 35px;
+    text-align: center;
+
+    color: #71817A;
+    grid-column: 1 / -1;
+}
+
+
+/* =========================================
+   9. CARD INFORMATION
+========================================= */
+
+.card-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 8px;
+
+    color: #71817A;
+    font-size: 13px;
+}
+
+
+/* =========================================
+   10. CARD ACTIONS
+========================================= */
+
+.card-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: auto;
+}
+
+.card-actions button {
+    flex: 1;
+}

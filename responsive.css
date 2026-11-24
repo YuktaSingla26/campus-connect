@@ -1,0 +1,187 @@
+
+/* =========================================
+   1. TABLET RESPONSIVENESS
+========================================= */
+
+@media screen and (max-width: 1024px) {
+
+    .stats-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .event-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .main-content {
+        padding: 22px;
+    }
+
+}
+
+
+/* =========================================
+   2. MOBILE RESPONSIVENESS
+========================================= */
+
+@media screen and (max-width: 768px) {
+
+    /* Navbar */
+
+    .navbar {
+        padding: 0 15px;
+        height: 60px;
+    }
+
+    .logo h2 {
+        font-size: 19px;
+    }
+
+    .nav-right {
+        gap: 10px;
+    }
+
+    .profile {
+        padding: 7px 10px;
+        font-size: 12px;
+    }
+
+
+    /* Main Layout */
+
+    .layout {
+        flex-direction: column;
+    }
+
+
+    /* Sidebar */
+
+    .sidebar {
+        width: 100%;
+        padding: 12px;
+
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+
+    .sidebar h3 {
+        display: none;
+    }
+
+    .sidebar a {
+        padding: 10px;
+        font-size: 13px;
+    }
+
+
+    /* Main Content */
+
+    .main-content {
+        padding: 18px;
+    }
+
+
+    /* Welcome Section */
+
+    .welcome-section {
+        padding: 22px;
+    }
+
+    .welcome-section h1 {
+        font-size: 24px;
+    }
+
+
+    /* Statistics */
+
+    .stats-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    .stat-card {
+        padding: 16px;
+    }
+
+    .stat-card h3 {
+        font-size: 24px;
+    }
+
+
+    /* Event Cards */
+
+    .event-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* Announcements */
+
+    .announcement-list {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* Quick Links */
+
+    .quick-links {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* Search and Filters */
+
+    .filter-section {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .filter-section input,
+    .filter-section select {
+        width: 100%;
+    }
+
+}
+
+
+/* =========================================
+   3. SMALL MOBILE SCREENS
+========================================= */
+
+@media screen and (max-width: 480px) {
+
+    .navbar {
+        padding: 0 10px;
+    }
+
+    .logo h2 {
+        font-size: 16px;
+    }
+
+    .notification {
+        font-size: 17px;
+    }
+
+    .profile {
+        font-size: 11px;
+        padding: 6px 8px;
+    }
+
+    .main-content {
+        padding: 14px;
+    }
+
+    .welcome-section h1 {
+        font-size: 21px;
+    }
+
+    .stats-container {
+        grid-template-columns: 1fr;
+    }
+
+    .dashboard-section h2 {
+        font-size: 20px;
+    }
+
+}
