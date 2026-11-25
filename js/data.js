@@ -31,7 +31,7 @@ let societies = [
         id: 1,
         name: "IEEE",
         category: "Technical",
-        image: "images/ieee.jpg",
+        image: "images/ieee.jpeg",
         description: "A global technical community connecting students with technology, innovation and professional opportunities.",
         benefits: [
             "Opportunity to become an IEEE member",
@@ -45,7 +45,7 @@ let societies = [
         id: 2,
         name: "Mavericks",
         category: "Dance",
-        image: "images/mavericks.jpg",
+        image: "images/mavericks.jpeg",
         description: "The college dance society for students who love dancing, performing and expressing themselves through movement.",
         benefits: [
             "Explore different dance styles",
@@ -59,7 +59,7 @@ let societies = [
         id: 3,
         name: "Avaran",
         category: "Dramatics",
-        image: "images/avaran.jpg",
+        image: "images/avaran.jpeg",
         description: "The college dramatics society that brings stories and social issues to life through theatre and street plays.",
         benefits: [
             "Participate in street plays and DCTC",
@@ -73,7 +73,7 @@ let societies = [
         id: 4,
         name: "Hash Define",
         category: "Technical",
-        image: "images/hash-define.jpg",
+        image: "images/hash-define.jpeg",
         description: "A technical society for students interested in coding, programming and exploring technology.",
         benefits: [
             "Improve programming skills",
@@ -87,7 +87,7 @@ let societies = [
         id: 5,
         name: "Chroma Vita",
         category: "Art",
-        image: "images/chroma-vita.jpg",
+        image: "images/chroma-vita.jpeg",
         description: "The art society of BPIT, bringing together students who enjoy creativity, art and visual expression.",
         benefits: [
             "Explore different forms of art",
