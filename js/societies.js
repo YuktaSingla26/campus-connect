@@ -1,71 +1,55 @@
-let societies = getData("societies", []);
+let societiesContainer = document.getElementById("societiesContainer");
+let societySearch = document.getElementById("societySearch");
 
-let societyContainer =
-    document.getElementById("societiesContainer");
+function displaySocieties(societyList) {
+    societiesContainer.innerHTML = "";
 
-function displaySocieties(list) {
+    societyList.forEach(function(society) {
+        let card = document.createElement("div");
+        card.className = "society-card";
 
-    societyContainer.innerHTML = "";
+        card.innerHTML = `
+            <h3>${society.name}</h3>
+            <p class="society-category">${society.category}</p>
+            <p>${society.description}</p>
 
-    if (list.length === 0) {
-        societyContainer.innerHTML = "<p>No societies found.</p>";
-        return;
-    }
+            <h4>What you can gain:</h4>
+            <ul>
+                ${society.benefits.map(function(point) {
+                    return `<li>${point}</li>`;
+                }).join("")}
+            </ul>
 
-    list.forEach(function(society) {
-
-        societyContainer.innerHTML += `
-
-            <div class="card">
-
-                <h3>${society.name}</h3>
-
-                <p>${society.category}</p>
-
-                <p>${society.description}</p>
-
-                <button onclick="joinSociety(${society.id})">
-                    Express Interest
-                </button>
-
-            </div>
-
+            <button onclick="joinSociety(${society.id})">
+                Show Interest
+            </button>
         `;
 
+        societiesContainer.appendChild(card);
     });
-
 }
 
 function joinSociety(id) {
+    let joinedSocieties = getData("joinedSocieties", []);
 
-    let joined = getData("joinedSocieties", []);
-
-    if (joined.includes(id)) {
-        alert("You have already expressed interest!");
-        return;
+    if (joinedSocieties.includes(id)) {
+        showMessage("You have already shown interest in this society!");
+    } else {
+        joinedSocieties.push(id);
+        saveData("joinedSocieties", joinedSocieties);
+        showMessage("Interest submitted successfully!");
     }
-
-    joined.push(id);
-
-    saveData("joinedSocieties", joined);
-
-    alert("Interest submitted successfully!");
-
 }
 
-document.getElementById("societySearch")
-.addEventListener("input", function() {
+societySearch.addEventListener("input", function() {
+    let searchText = societySearch.value.toLowerCase();
 
-    let value = this.value.toLowerCase();
-
-    let filtered = societies.filter(function(society) {
-
-        return society.name.toLowerCase().includes(value);
-
+    let filteredSocieties = societies.filter(function(society) {
+        return society.name.toLowerCase().includes(searchText) ||
+               society.category.toLowerCase().includes(searchText);
     });
 
-    displaySocieties(filtered);
-
+    displaySocieties(filteredSocieties);
 });
 
 displaySocieties(societies);
