@@ -26,79 +26,78 @@ const initialEvents = [
         description: "Celebrate music, dance and creativity."
     }
 ];
-
 let societies = [
     {
         id: 1,
         name: "IEEE",
         category: "Technical",
-        description: "A global technical community that connects students with technology, innovation and professional opportunities.",
+        image: "pictures/ieee.jpg",
+        description: "A global technical community connecting students with technology, innovation and professional opportunities.",
         benefits: [
             "Opportunity to become an IEEE member",
             "Explore different technical domains",
-            "Learn through mentorship and guidance",
-            "Participate in workshops, events and hackathons",
-            "Connect with students from colleges around the world",
-            "Get exposure to competitions and events at different levels"
+            "Learn through mentorship",
+            "Participate in workshops and hackathons",
+            "Connect with students from colleges worldwide"
         ]
     },
     {
         id: 2,
         name: "Mavericks",
-        category: "Cultural",
+        category: "Dance",
+        image: "pictures/mavericks.jpg",
         description: "The college dance society for students who love dancing, performing and expressing themselves through movement.",
         benefits: [
-            "Learn and explore different dance styles",
-            "Participate in college and inter-college competitions",
-            "Perform at cultural events and festivals",
-            "Improve teamwork and stage confidence",
-            "Meet people who share your passion for dance"
+            "Explore different dance styles",
+            "Participate in dance competitions",
+            "Perform at college festivals and events",
+            "Build stage confidence",
+            "Improve teamwork and coordination"
         ]
     },
     {
         id: 3,
         name: "Avaran",
-        category: "Cultural",
+        category: "Dramatics",
+        image: "pictures/avaran.jpg",
         description: "The college dramatics society that brings stories and social issues to life through theatre and street plays.",
         benefits: [
-            "Participate in street plays and DCTC events",
-            "Improve communication and public speaking skills",
-            "Build confidence through stage performances",
-            "Develop acting, writing and creative skills",
-            "Gain exposure through competitions and performances",
-            "Learn teamwork, expression and stage presence"
+            "Participate in street plays and DCTC",
+            "Improve communication skills",
+            "Build confidence and public speaking",
+            "Develop acting and creative skills",
+            "Gain exposure through performances and competitions"
         ]
     },
     {
         id: 4,
         name: "Hash Define",
         category: "Technical",
-        description: "A technical society for students interested in coding, programming and exploring new areas of technology.",
+        image: "pictures/hash-define.jpg",
+        description: "A technical society for students interested in coding, programming and exploring technology.",
         benefits: [
-            "Improve programming and problem-solving skills",
-            "Participate in coding competitions and hackathons",
-            "Work on technical projects with other students",
-            "Learn new tools and technologies",
-            "Collaborate with students who share similar interests",
-            "Prepare for technical events and opportunities"
+            "Improve programming skills",
+            "Participate in coding competitions",
+            "Explore new technologies",
+            "Work on technical projects",
+            "Improve problem-solving skills"
         ]
     },
     {
         id: 5,
         name: "Chroma Vita",
-        category: "Creative",
-        description: "The college art society for creative minds who enjoy art, design and visual expression.",
+        category: "Art",
+        image: "pictures/chroma-vita.jpg",
+        description: "The art society of BPIT, bringing together students who enjoy creativity, art and visual expression.",
         benefits: [
-            "Explore different forms of art and creativity",
+            "Explore different forms of art",
             "Participate in art competitions and exhibitions",
-            "Work on creative projects and decorations",
+            "Work on creative projects",
             "Improve artistic and design skills",
-            "Collaborate with other creative students",
-            "Showcase your work at college events"
+            "Showcase creativity at college events"
         ]
     }
 ];
-
 const initialOpportunities = [
     {
         id: 1,
