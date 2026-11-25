@@ -9,26 +9,33 @@ function displaySocieties(societyList) {
         card.className = "society-card";
 
         card.innerHTML = `
-            <h3>${society.name}</h3>
-            <p class="society-category">${society.category}</p>
-            <p>${society.description}</p>
+            <div class="society-logo">
+                <img src="${society.image}" alt="${society.name} logo">
+            </div>
 
-            <h4>What you can gain:</h4>
-            <ul>
-                ${society.benefits.map(function(point) {
-                    return `<li>${point}</li>`;
-                }).join("")}
-            </ul>
+            <div class="society-info">
+                <p class="society-category">${society.category}</p>
+                <h3>${society.name}</h3>
 
-            <button onclick="joinSociety(${society.id})">
-                Show Interest
-            </button>
+                <p>${society.description}</p>
+
+                <h4>What you can gain:</h4>
+
+                <ul>
+                    ${society.benefits.map(function(point) {
+                        return `<li>${point}</li>`;
+                    }).join("")}
+                </ul>
+
+                <button onclick="joinSociety(${society.id})">
+                    Show Interest
+                </button>
+            </div>
         `;
 
         societiesContainer.appendChild(card);
     });
 }
-
 function joinSociety(id) {
     let joinedSocieties = getData("joinedSocieties", []);
 

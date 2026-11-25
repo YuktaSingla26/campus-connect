@@ -150,3 +150,63 @@
 .card-actions button {
     flex: 1;
 }
+
+.society-card {
+    background: white;
+    border-radius: 15px;
+    padding: 22px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s;
+}
+
+.society-card:hover {
+    transform: translateY(-5px);
+}
+
+.society-logo {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 18px;
+    border-radius: 50%;
+    overflow: hidden;
+    background: #f1f1f1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.society-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.society-info h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.society-category {
+    display: inline-block;
+    background: #e8eaff;
+    color: #4545a5;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.society-info ul {
+    padding-left: 20px;
+    margin: 12px 0;
+}
+
+.society-info li {
+    margin-bottom: 7px;
+    color: #555;
+}
+
+.society-info button {
+    margin-top: 12px;
+}
