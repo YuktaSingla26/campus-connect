@@ -87,7 +87,7 @@ let societies = [
         id: 5,
         name: "Chroma Vita",
         category: "Art",
-        image: "images/chroma-vita.jpeg",
+        image: "images/chromavita.jpeg",
         description: "The art society of BPIT, bringing together students who enjoy creativity, art and visual expression.",
         benefits: [
             "Explore different forms of art",
